@@ -60,7 +60,6 @@ describe("Setting New Password:", () => {
             .then(emails => {
                 cy.writeFile('cypress/fixtures/email-html.html', emails[0].body.html);
 
-
                 // TODO -- Fetch register link from data fetched from email
                 // let registerLink = 'https://douglas.de/resetPassword?apiKey=3_-t-AxoeuhzOrCaDZk_wp_QwxvFYBBXVtz_zAZYfEEZtROiPih82cGJqJcUvVrSrQ&pwrt=tk1..AcbHpxDLJA.z-IKESzr37xNmkOyesW-u01sAK1koswr0dnXXKv1Jgwn5YgGRVPZnNe2wLosHuLA.D6YO0FyuJNxWt2Wb-hSjlds3SCGr5VGVQ76GpH83G-z-42UWumPql6xki5eZQ33EX1zKaotrROk_JcLF1TbTdw.sc3&email=testautomationakshat@gmail.com&langFallback=de'
                 // cy.visit(registerLink);
